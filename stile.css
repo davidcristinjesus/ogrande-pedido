@@ -20,16 +20,14 @@ body {
   height: auto;
   width: 100%;
 }
+
 .background-1 {
   height: 100vh;
   width: 100%;
   background: center / cover no-repeat url("imagem/background-1.png");
 }
+
 .background-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100%;
   background: center / cover no-repeat url("imagem/background-2.png");
@@ -112,7 +110,7 @@ body {
 .floating-button {
   position:absolute;
   text-align: center;
-  bottom: 300px;
+  bottom: 9px;
   right:50%;
   left: 90%;
   transform: translate(-50%, -50%);

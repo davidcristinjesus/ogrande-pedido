@@ -27,8 +27,7 @@ body {
 }
 .background-2 {
   height: 100vh;
-  max-width: 100%;
-  min-width: 320px;
+  width: 100%;
   background: center / cover no-repeat url("imagem/background-2.png");
   background-attachment: fixed;
 }
@@ -110,8 +109,8 @@ body {
   position:absolute;
   text-align: center;
   bottom: 300px;
-  right: 50%;
-  left: 75%;
+  right:50%;
+  left: 90%;
   transform: translate(-50%, -50%);
   width: 20vw;
   padding: 2em;

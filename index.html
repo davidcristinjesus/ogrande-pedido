@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/logo-site.png">
+    <title>Amor</title>
+    <link rel="stylesheet" href="stile.css" />
+    <script src="stile.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="imagem/favicon-32x32.png">
+  </head>
+
+  <body>
+
+    
+  
+    <button class="floating-button" onclick="mostrarConfirm()">Mostrar Confirm</button> 
+    <button class="floating-button" onclick="mostrarAlert()">Mostrar Alert</button>
+    <button class="floating-button" onclick="mostrarPrompt()">Aperte Aqui</button>
+    
+
+    <div class="background-1"></div>
+    <div class="background-2"></div>
+    <div class="background-3">
+      <div class="cta">
+        <button class="btn" id="yes">
+          <span class="btn-text-one">Sim</span>
+          <span class="btn-text-two">Eita! 💕</span>
+        </button>
+        <button class="btn no">
+          <span class="btn-text-one">Não</span>
+          <span class="btn-text-two">😅</span>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      function mostrarPrompt() {
+          let nome = prompt("Qual é o seu nome?", "");
+          if (nome !== null) {
+              alert("Olá minha Amada, " + nome + "!");
+          } else {
+              alert("Você cancelou o prompt.");
+          }
+          setTimeout(mostrarConfirm, 700); // Espera 1 segundo antes de mostrar o confirm
+      }
+
+      function mostrarConfirm() {
+          let confirmar = confirm("Ao namoro?");
+          if (confirmar) {
+              alert("💕Namoro é relacionamento sério, com a intenção clara de se casar no futuro. Totalmente diferente do namoro mundano, que muitas vezes é visto como uma forma de entretenimento, uma maneira de passar o tempo ou só mesmo para satisfazer os prazeres da carne. É um tempo para o casal se conhecer melhor e descobrir se quer passar a vida toda juntas. O casal partilha conhecimentos, fortalece a confiança e cumplicidade, e experimenta relações mais íntimas, de natureza emocional, fisicas e psicologicas que servem de base para decidirem se firmam um compromisso mais sério e quando está na presença de Deus este é completo. Quanto mim não tenho duvida que estou Amando você. Quanto a você Samira Lourrany tem o livre arbitrio de decidir se quer conhecer melhor esse Apaixonado e assim comessar uma jornada pra sempre ao meu lado. FIQUE A VONTADE PARA SUBIR A PAGE.💕.");
+          } else {
+              alert("Você pressionou Cancelar.");
+          }
+      }
+
+      function sumirBotao(button) {
+        button("O botão vai desaparecer!");
+          display = 'none';
+      }
+  
+  </script>
+  </body>
+</html>
